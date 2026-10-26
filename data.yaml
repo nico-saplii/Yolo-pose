@@ -1,0 +1,16 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+kpt_shape: [17, 3]
+flip_idx: [0, 2, 1, 4, 3, 6, 5, 8, 7, 10, 9, 12, 11, 14, 13, 16, 15]
+
+nc: 2
+names: ['person', 'encapuchado']
+
+roboflow:
+  workspace: sem2l1
+  project: goodpeople
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/sem2l1/goodpeople/dataset/1
